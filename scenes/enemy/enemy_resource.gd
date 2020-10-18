@@ -24,20 +24,20 @@ func get_hp():
 		EnemyTypes.ENEMY_TYPES.SOLDIER:
 			if(EnemyTypes.GRADE==NORMAL): 
 				return 30
-			else return 60
+			else: return 60
 		EnemyTypes.ENEMY_TYPES.COMMANDO:
 			if(EnemyTypes.GRADE==NORMAL): 
 				return 80
-			else return 120
+			else: return 120
 		EnemyTypes.ENEMY_TYPES.ARMORED_TRANSPORT:
 			if(EnemyTypes.GRADE==NORMAL): 
 				return 70
-			else return	100
+			else: return	100
 		EnemyTypes.ENEMY_TYPES.TANK:
 			if(EnemyTypes.GRADE==NORMAL): 
 				return	250
-			else return	750
+			else: return	750
 		EnemyTypes.ENEMY_TYPES.AIRCRAFT:
 			if(EnemyTypes.GRADE==NORMAL): 
 				return	150
-			else return	300
+			else: return	300
