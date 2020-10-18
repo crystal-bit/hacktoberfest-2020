@@ -42,8 +42,8 @@ func hide_menu():
 	reset_slots()
 
 func buy_tower(slot: Slot):
-	if Game.user_money >= slot.tower_cost:
-		emit_signal("tower_bought", slot.tower_name)
+	if Game.user_money >= slot.tower_resource.cost:
+		emit_signal("tower_bought", slot.tower_resource.tower_type)
 		hide()
 	else:
 		print("Not enough money")
