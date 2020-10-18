@@ -20,24 +20,24 @@ func get_name():
 			return "Aircraft"
 
 func get_hp():
-	match type:
-		EnemyTypes.ENEMY_TYPES.SOLDIER:
-			if(EnemyTypes.GRADE==NORMAL): 
-				return 30
-			else: return 60
-		EnemyTypes.ENEMY_TYPES.COMMANDO:
-			if(EnemyTypes.GRADE==NORMAL): 
-				return 80
-			else: return 120
-		EnemyTypes.ENEMY_TYPES.ARMORED_TRANSPORT:
-			if(EnemyTypes.GRADE==NORMAL): 
-				return 70
-			else: return	100
-		EnemyTypes.ENEMY_TYPES.TANK:
-			if(EnemyTypes.GRADE==NORMAL): 
-				return	250
-			else: return	750
-		EnemyTypes.ENEMY_TYPES.AIRCRAFT:
-			if(EnemyTypes.GRADE==NORMAL): 
-				return	150
-			else: return	300
+	match type and grade:
+		type.SOLDIER, grade.NORMAL:
+			return 30
+		type.SOLDIER, grade.ELITE:
+			return 60
+		type.COMMANDO, grade.NORMAL:
+			return 80
+		type.COMMANDO, grade.ELITE:
+			return 120
+		type.ARMORED_TRANSPORT, grade.NORMAL:
+			return 70
+		type.ARMORED_TRANSPORT, grade.ELITE:
+			return 100
+		type.TANK, grade.NORMAL:
+			return 250
+		type.TANK, grade.ELITE:
+			return 450
+		type.AIRCRAFT, grade.NORMAL:
+			return 150
+		type.AIRCRAFT, grade.ELITE:
+			return 300
