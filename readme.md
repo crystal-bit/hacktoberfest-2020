@@ -74,3 +74,7 @@ For the order of variables, signals, functions, please follow this order (simpli
 - Kenney assets are released under CC0 
    - https://www.kenney.nl/assets/topdown-tanks-redux
    - https://www.kenney.nl/assets/tower-defense-top-down
+
+# Developer
+
+Developed by [Crystal Bit](https://github.com/crystal-bit)
