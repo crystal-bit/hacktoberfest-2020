@@ -103,7 +103,7 @@ func upgrade():
 func load_resource_data(p_tower_resource : Tower_Resource):
 	sprite.texture = p_tower_resource.texture
 	attack_range_area.find_node("CollisionShape2D").shape.radius = p_tower_resource.attack_radius
-	fire_timer.wait_time = p_tower_resource.fire_rate
+	fire_timer.wait_time = p_tower_resource.fire_cooldown
 
 
 func fire(_target: Enemy):
@@ -112,5 +112,6 @@ func fire(_target: Enemy):
 	ammo.shot_direction = to_target
 	ammo.set_position(position)
 	ammo.set_rotation(to_target.angle() + TOWER_ROTATION_OFFSET)
-	ammo.damage = 100
+	ammo.load_tower_resource(tower_resource)
+	
 	add_child(ammo)

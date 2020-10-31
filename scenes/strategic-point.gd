@@ -57,7 +57,7 @@ func show_tower_description_popup(slot: Slot):
 		slot.get_readable_name(),
 		slot.tower_resource.description,
 		slot.tower_resource.damage,
-		slot.tower_resource.fire_rate
+		slot.tower_resource.fire_cooldown
 	)
 	var description_appear_pos = slot.rect_global_position
 	if slot.rect_position.x > 0:
