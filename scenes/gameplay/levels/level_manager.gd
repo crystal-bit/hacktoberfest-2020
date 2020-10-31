@@ -34,6 +34,9 @@ func _on_WaveManager_last_wave():
 func _on_enemy_death(money: int, enemy_position: Vector2):
 	var balance: Money = get_tree().get_nodes_in_group("UI")[0].money
 	balance.add(money)
-	$Particles2D.position = enemy_position
-	$Particles2D.amount = (money / 10) as int
-	$Particles2D.emitting = true
+	var coins: Particles2D = $CoinParticles2D
+	if coins.emitting:
+		coins = $CoinParticles2D2
+	coins.position = enemy_position
+	coins.amount = (money / 10) as int
+	coins.emitting = true

@@ -415,8 +415,10 @@ texture = ExtResource( 7 )
 position = Vector2( 723.87, 477.064 )
 texture = ExtResource( 7 )
 
-[node name="Particles2D" parent="." instance=ExtResource( 21 )]
-position = Vector2( 203.433, -264.401 )
+[node name="CoinParticles2D" parent="." instance=ExtResource( 21 )]
+position = Vector2( 85.5263, -201.343 )
+
+[node name="CoinParticles2D2" parent="." instance=ExtResource( 21 )]
 [connection signal="last_enemy_in_actual_wave_spawned" from="WaveManager" to="." method="_on_WaveManager_last_enemy_in_actual_wave_spawned"]
 [connection signal="last_enemy_spawned" from="WaveManager" to="." method="_on_WaveManager_last_enemy_spawned"]
 [connection signal="last_wave" from="WaveManager" to="." method="_on_WaveManager_last_wave"]

@@ -23,8 +23,7 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 color_ramp = SubResource( 2 )
 
-[node name="Particles2D" type="Particles2D"]
-position = Vector2( 121.47, -173.529 )
+[node name="CoinParticles2D" type="Particles2D"]
 scale = Vector2( 0.1, 0.1 )
 emitting = false
 lifetime = 0.5
