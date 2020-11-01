@@ -85,55 +85,28 @@ delay_in_sec = 5.0
 description = "For train your skill..."
 
 [node name="EnemyGroup" parent="WaveManager/EnemyWave" instance=ExtResource( 12 )]
-enemy_resource = ExtResource( 17 )
 num_of_enemies = 2
 
 [node name="EnemyGroup2" parent="WaveManager/EnemyWave" instance=ExtResource( 12 )]
 enemy_resource = ExtResource( 15 )
 num_of_enemies = 2
 
-[node name="EnemyGroup3" parent="WaveManager/EnemyWave" instance=ExtResource( 12 )]
-num_of_enemies = 6
-delay_in_sec = 1.5
-
-[node name="EnemyGroup4" parent="WaveManager/EnemyWave" instance=ExtResource( 12 )]
-
-[node name="EnemyGroup5" parent="WaveManager/EnemyWave" instance=ExtResource( 12 )]
-enemy_resource = ExtResource( 18 )
-num_of_enemies = 2
-delay_in_sec = 3.5
-
-[node name="EnemyGroup6" parent="WaveManager/EnemyWave" instance=ExtResource( 12 )]
-enemy_resource = ExtResource( 19 )
-
 [node name="EnemyWave2" parent="WaveManager" instance=ExtResource( 13 )]
-delay_in_sec = 4.0
-description = "Things get hard"
 
 [node name="EnemyGroup" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-num_of_enemies = 12
+enemy_resource = ExtResource( 18 )
 
 [node name="EnemyGroup2" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-num_of_enemies = 12
-
-[node name="EnemyGroup3" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-num_of_enemies = 4
-delay_in_sec = 5.0
-
-[node name="EnemyGroup4" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-num_of_enemies = 2
+enemy_resource = ExtResource( 19 )
 delay_in_sec = 4.0
 
-[node name="EnemyGroup5" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-delay_in_sec = 3.5
+[node name="EnemyGroup3" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
+enemy_resource = ExtResource( 15 )
+delay_in_sec = 3.0
 
-[node name="EnemyGroup6" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-num_of_enemies = 12
-delay_in_sec = 0.8
-
-[node name="EnemyGroup7" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
-num_of_enemies = 3
-delay_in_sec = 6.0
+[node name="EnemyGroup4" parent="WaveManager/EnemyWave2" instance=ExtResource( 12 )]
+enemy_resource = ExtResource( 17 )
+delay_in_sec = 3.0
 
 [node name="HitArea" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1618.29, 704.646 )
@@ -158,8 +131,6 @@ __meta__ = {
 
 [node name="EnemyCallButton" parent="." instance=ExtResource( 14 )]
 position = Vector2( 929.326, 59.5818 )
-id = 0
-direction = 0
 
 [node name="StrategicPoint" parent="." instance=ExtResource( 3 )]
 position = Vector2( 448.08, 535.259 )
