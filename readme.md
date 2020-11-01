@@ -1,10 +1,24 @@
 # Tower Defense game - Hacktoberfest 2020
 
-This unnamed game (you can [propose a title here](https://github.com/crystal-bit/hacktoberfest-2020/issues/1)) has been created for people who want to practice game development collaboratively while partecipating to the [Hacktoberfest 2020](https://hacktoberfest.digitalocean.com/).
+![game logo](https://github.com/crystal-bit/hacktoberfest-2020/blob/master/assets/menu_title_shadow.png?raw=true)
 
-It's a tower defense game inspired by Kingdom Rush.
+
+**Defending Todot** it's an open source tower defense game inspired by Kingdom Rush.  
+
+It has been created for people who want to practice game development collaboratively while partecipating to the [Hacktoberfest](https://hacktoberfest.digitalocean.com/) 2020.
 
 The project is made with the open source [Godot Engine v3.2.3](https://godotengine.org).
+
+## 🎮 Play it now
+
+- [Browser HTML5](https://crystal-bit.github.io/hacktoberfest-2020/)
+- [Linux / Windows / Mac builds](https://github.com/crystal-bit/hacktoberfest-2020/releases/tag/2020.11.01)
+
+## Discuss with the community
+
+![Discord](https://img.shields.io/discord/686600734636376102?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)
+
+Join [the Discord server](https://discord.gg/SA6S2Db)
 
 ## "How can I contribute?"
 

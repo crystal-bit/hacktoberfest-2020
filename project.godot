@@ -54,6 +54,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scenes/main.gd"
 }, {
+"base": "Control",
+"class": "Money",
+"language": "GDScript",
+"path": "res://scenes/gameplay/ui/money.gd"
+}, {
 "base": "Button",
 "class": "Slot",
 "language": "GDScript",
@@ -94,6 +99,7 @@ _global_script_class_icons={
 "EnemyWave": "",
 "HitArea": "",
 "Main": "",
+"Money": "",
 "Slot": "",
 "Tower": "",
 "TowerType": "",
@@ -139,7 +145,7 @@ pause={
 
 fallback="it"
 locale_filter=[ 0, [  ] ]
-translations=PoolStringArray( "res://resources/localization.en.translation", "res://resources/localization.it.translation" )
+translations=PoolStringArray( "res://resources/localization.en.translation", "res://resources/localization.it.translation", "res://resources/localization.es.translation" )
 
 [rendering]
 
