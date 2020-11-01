@@ -31,9 +31,12 @@ func _on_enemy_arrived_to_hit_area(enemy):
 func _on_enemy_death(money: int, enemy_position: Vector2):
 	var balance: Money = get_tree().get_nodes_in_group("UI")[0].money
 	balance.add(money)
-	$Particles2D.position = enemy_position
-	$Particles2D.amount = max(1, (money / 10))
-	$Particles2D.emitting = true
+	var coins: Particles2D = $CoinParticles2D
+	if coins.emitting:
+		coins = $CoinParticles2D2
+	coins.position = enemy_position
+	coins.amount = (money / 10) as int
+	coins.emitting = true
 	wave_manager.total_enemies_count -= 1
 	check_if_last_enemy()
 
@@ -54,13 +57,3 @@ func _on_WaveManager_last_enemy_spawned():
 
 func _on_WaveManager_last_wave():
 	pass # Replace with function body.
-
-func _on_enemy_death(money: int, enemy_position: Vector2):
-	var balance: Money = get_tree().get_nodes_in_group("UI")[0].money
-	balance.add(money)
-	var coins: Particles2D = $CoinParticles2D
-	if coins.emitting:
-		coins = $CoinParticles2D2
-	coins.position = enemy_position
-	coins.amount = (money / 10) as int
-	coins.emitting = true
