@@ -85,6 +85,11 @@ __meta__ = {
 "_gizmo_extents_": 32.0
 }
 
+[node name="CoinParticles2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 155.564, -231.931 )
+
+[node name="CoinParticles2D2" parent="." instance=ExtResource( 3 )]
+
 [node name="StrategicPoint" parent="." instance=ExtResource( 3 )]
 position = Vector2( 766.732, 307.547 )
 

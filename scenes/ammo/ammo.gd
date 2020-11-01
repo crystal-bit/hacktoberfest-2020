@@ -2,27 +2,30 @@ extends KinematicBody2D
 class_name Ammo
 
 onready var tween = $Tween
-const MAX_VELOCITY = 600
 
-var velocity = 100 # initial velocity
-var acceleration = 2
+var speed = 300
+var acceleration = 200
 var shot_direction := Vector2()
 var travelled_distance = 0
-var damage = 30
+var damage = 0
 var additional_effect = {}
 
 func _ready():
 	pass
 
+func load_tower_resource(tower_resource: Tower_Resource):
+	speed = tower_resource.bullet_speed
+	acceleration = tower_resource.bullet_acceleration
+	damage = tower_resource.damage
 
 func _process(delta):
 	if !shot_direction:
 		return
-	velocity = min(velocity + acceleration, MAX_VELOCITY)
-	travelled_distance += velocity * delta
-	if travelled_distance > 750 and !tween.is_active():
+	speed += acceleration * delta
+	travelled_distance += speed * delta
+	if travelled_distance > 1000 and !tween.is_active():
 		disappear()
-	var collision_data = move_and_collide(velocity * shot_direction * delta)
+	var collision_data = move_and_collide(speed * shot_direction * delta)
 
 	if collision_data and collision_data.collider.is_in_group("enemies"):
 		explosion(collision_data.collider)

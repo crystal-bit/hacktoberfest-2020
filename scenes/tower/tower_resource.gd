@@ -7,8 +7,10 @@ export(int) var level
 export(Texture) var texture
 export(int) var attack_radius
 export(int) var damage
+export(int) var bullet_speed
+export(int) var bullet_acceleration
 export(int, 0, 100) var armor_piercing
-export(float) var fire_rate
+export(float) var fire_cooldown
 export(String) var description
 export(bool) var locked
 

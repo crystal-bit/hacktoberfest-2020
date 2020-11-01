@@ -30,7 +30,7 @@ __meta__ = {
 radius = 100
 animation_speed = 0.5
 
-[node name="SlotBottomRight" parent="RadialControl" instance=ExtResource( 1 )]
+[node name="SlotBunker" parent="RadialControl" instance=ExtResource( 1 )]
 margin_left = -35.0
 margin_top = -35.0
 margin_right = 35.0
@@ -40,7 +40,7 @@ grow_vertical = 2
 group = SubResource( 1 )
 tower_resource = ExtResource( 7 )
 
-[node name="SlotTopLeft" parent="RadialControl" instance=ExtResource( 1 )]
+[node name="SlotMissile" parent="RadialControl" instance=ExtResource( 1 )]
 margin_left = -35.0
 margin_top = -35.0
 margin_right = 35.0003
@@ -48,7 +48,7 @@ margin_bottom = 35.0
 group = SubResource( 1 )
 tower_resource = ExtResource( 8 )
 
-[node name="SlotTopRight" parent="RadialControl" instance=ExtResource( 1 )]
+[node name="SlotSniper" parent="RadialControl" instance=ExtResource( 1 )]
 margin_left = -35.0
 margin_top = -35.0
 margin_right = 35.0
@@ -56,7 +56,7 @@ margin_bottom = 35.0003
 group = SubResource( 1 )
 tower_resource = ExtResource( 5 )
 
-[node name="SlotTopRight2" parent="RadialControl" instance=ExtResource( 1 )]
+[node name="SlotLocked" parent="RadialControl" instance=ExtResource( 1 )]
 margin_left = -35.0
 margin_top = -35.0
 margin_right = 35.0
@@ -65,7 +65,7 @@ disabled = true
 group = SubResource( 1 )
 tower_resource = ExtResource( 4 )
 
-[node name="SlotTopRight3" parent="RadialControl" instance=ExtResource( 1 )]
+[node name="SlotLocked2" parent="RadialControl" instance=ExtResource( 1 )]
 margin_left = -35.0
 margin_top = -35.0
 margin_right = 35.0003
