@@ -2,10 +2,13 @@
 
 ![game logo](https://github.com/crystal-bit/hacktoberfest-2020/blob/master/assets/menu_title_shadow.png?raw=true)
 
-
 **Defending Todot** it's an open source tower defense game inspired by Kingdom Rush.  
 
 It has been created for people who want to practice game development collaboratively while partecipating to the [Hacktoberfest](https://hacktoberfest.digitalocean.com/) 2020.
+
+If you want to contribute to this Tower Defense game, you can do it on the **defending-todot fork**: https://github.com/crystal-bit/defending-todot
+
+This repository is now freezed.
 
 The project is made with the open source [Godot Engine v3.2.3](https://godotengine.org).
 
@@ -19,24 +22,6 @@ The project is made with the open source [Godot Engine v3.2.3](https://godotengi
 ![Discord](https://img.shields.io/discord/686600734636376102?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)
 
 Join [the Discord server](https://discord.gg/SA6S2Db)
-
-## "How can I contribute?"
-
-You can:
-
-- **[Open a new issue](https://github.com/crystal-bit/space-shooter/issues/new)**: do you have an idea for the gameplay? Do you want to suggest an improvement? Do you want to create new assets like sprites, sounds, effects,...? Did you find a bug? Open a new issue and let other developers know.
-- **[Take an issue](https://github.com/crystal-bit/hacktoberfest-2020/issues)**: work on existing issues. Read below for guidelines.
-
-### How to take an issue ⤵️
-
-1. ➡️ **Write a short message** in the issue itself to notify others that you are working on it. (I'll assign the issue to your Github user)
-2. ➡️ **Ask for help** if you have any doubt.
-   - Ask for help in the issue itself
-   - Ask on the Discord server - https://discord.gg/SA6S2Db
-   - Ask during a livestream - [twitch.tv/crystal_bit](https://www.twitch.tv/crystal_bit) (feel free to ask in English, Spanish or Italian)
-3. ➡️ **Happy coding**! I hope you will learn a lot during the process!
-
-I hope these rules will help everyone having an enjoyable Hacktoberfest.
 
 ## How to appear in the game credits
 
