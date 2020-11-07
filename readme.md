@@ -8,7 +8,7 @@ It has been created for people who want to practice game development collaborati
 
 If you want to contribute to this Tower Defense game, you can do it on the **defending-todot fork**: https://github.com/crystal-bit/defending-todot
 
-This repository is now freezed.
+⚠ This repository is now freezed.
 
 The project is made with the open source [Godot Engine v3.2.3](https://godotengine.org).
 
